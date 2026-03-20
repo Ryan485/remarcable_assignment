@@ -31,7 +31,7 @@ def product_list(request):
     if tag:
         products = products.filter(tags__id = tag)
 
-    return render(request, 'index.html', {
+    return render(request, 'inventory/index.html', {
         'products' : products,
         'categories' : categories,
         'tags' : tags
