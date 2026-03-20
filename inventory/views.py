@@ -20,7 +20,7 @@ def product_list(request):
 
     search = request.GET.get('search')
     category = request.GET.get('category')
-    tag = request.GET.get('tags')
+    tag = request.GET.getlist('tags')
 
     if search:
         products = products.filter(description__contains = search)
@@ -29,10 +29,13 @@ def product_list(request):
         products = products.filter(category__id = category)
 
     if tag:
-        products = products.filter(tags__id = tag)
+        products = products.filter(tags__id__in = tag)
 
     return render(request, 'inventory/index.html', {
         'products' : products,
         'categories' : categories,
-        'tags' : tags
+        'tags' : tags,
+        'selected_category' : category,
+        'selected_tags' : [int(t) for t in tag],
+        'search_query' : search or ''
         })
