@@ -1,0 +1,387 @@
+[
+{
+  "model": "inventory.category",
+  "pk": 1,
+  "fields": {
+    "name": "Wiring & Cables"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 2,
+  "fields": {
+    "name": "Switchgear & Protection"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 3,
+  "fields": {
+    "name": "Lighting"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 4,
+  "fields": {
+    "name": "Conduits & Fittings"
+  }
+},
+{
+  "model": "inventory.category",
+  "pk": 5,
+  "fields": {
+    "name": "Power Distribution"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 1,
+  "fields": {
+    "name": "industrial"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 2,
+  "fields": {
+    "name": "residential"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 3,
+  "fields": {
+    "name": "weatherproof"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 4,
+  "fields": {
+    "name": "high-voltage"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 5,
+  "fields": {
+    "name": "LED"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 6,
+  "fields": {
+    "name": "copper"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 7,
+  "fields": {
+    "name": "fire-rated"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 8,
+  "fields": {
+    "name": "smart-home"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 9,
+  "fields": {
+    "name": "outdoor"
+  }
+},
+{
+  "model": "inventory.tag",
+  "pk": 10,
+  "fields": {
+    "name": "energy-efficient"
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 1,
+  "fields": {
+    "name": "Copper Flexible Wire 2.5mm",
+    "description": "A flexible copper wire suitable for residential wiring",
+    "category": 1,
+    "price": "5.99",
+    "tags": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 2,
+  "fields": {
+    "name": "Armoured Cable 4mm",
+    "description": "Heavy duty armoured cable for underground use",
+    "category": 1,
+    "price": "15.99",
+    "tags": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 3,
+  "fields": {
+    "name": "Twin and Earth Cable 6mm",
+    "description": "Standard twin and earth cable for domestic use",
+    "category": 1,
+    "price": "12.99",
+    "tags": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 4,
+  "fields": {
+    "name": "High Voltage Power Cable",
+    "description": "Industrial grade high voltage power cable",
+    "category": 1,
+    "price": "45.99",
+    "tags": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 5,
+  "fields": {
+    "name": "Circuit Breaker 20A",
+    "description": "Single pole circuit breaker for residential panels",
+    "category": 2,
+    "price": "8.99",
+    "tags": [
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 6,
+  "fields": {
+    "name": "RCD Safety Switch",
+    "description": "Residual current device for electrical safety",
+    "category": 2,
+    "price": "25.99",
+    "tags": [
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 7,
+  "fields": {
+    "name": "Industrial Contactor 40A",
+    "description": "Heavy duty contactor for industrial machinery",
+    "category": 2,
+    "price": "55.99",
+    "tags": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 8,
+  "fields": {
+    "name": "Surge Protector",
+    "description": "Protects equipment from power surges",
+    "category": 2,
+    "price": "18.99",
+    "tags": [
+      2,
+      8
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 9,
+  "fields": {
+    "name": "LED Panel 60x60",
+    "description": "Energy efficient LED panel for commercial spaces",
+    "category": 3,
+    "price": "35.99",
+    "tags": [
+      5,
+      10
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 10,
+  "fields": {
+    "name": "LED Strip Light 5m",
+    "description": "Flexible LED strip for decorative lighting",
+    "category": 3,
+    "price": "22.99",
+    "tags": [
+      5,
+      8
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 11,
+  "fields": {
+    "name": "Outdoor Flood Light",
+    "description": "Weatherproof LED flood light for outdoor use",
+    "category": 3,
+    "price": "42.99",
+    "tags": [
+      3,
+      9
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 12,
+  "fields": {
+    "name": "Smart LED Bulb",
+    "description": "WiFi controlled smart LED bulb",
+    "category": 3,
+    "price": "12.99",
+    "tags": [
+      5,
+      8,
+      10
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 13,
+  "fields": {
+    "name": "PVC Conduit 20mm",
+    "description": "Standard PVC conduit for cable protection",
+    "category": 4,
+    "price": "3.99",
+    "tags": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 14,
+  "fields": {
+    "name": "Flexible Conduit 25mm",
+    "description": "Flexible conduit for tight spaces",
+    "category": 4,
+    "price": "6.99",
+    "tags": [
+      1
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 15,
+  "fields": {
+    "name": "Conduit Junction Box",
+    "description": "weatherproof junction box for conduit systems",
+    "category": 4,
+    "price": "4.99",
+    "tags": [
+      3,
+      9
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 16,
+  "fields": {
+    "name": "Cable Gland 20mm",
+    "description": "Weatherproof cable entry fitting",
+    "category": 4,
+    "price": "2.99",
+    "tags": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 17,
+  "fields": {
+    "name": "Distribution Board 8 Way",
+    "description": "Main distribution board for residential use",
+    "category": 5,
+    "price": "75.99",
+    "tags": [
+      2,
+      7
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 18,
+  "fields": {
+    "name": "Busbar Chamber",
+    "description": "Industrial busbar chamber for power distribution",
+    "category": 5,
+    "price": "120.99",
+    "tags": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 19,
+  "fields": {
+    "name": "Automatic Transfer Switch",
+    "description": "Switches between mains and generator power",
+    "category": 5,
+    "price": "199.99",
+    "tags": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "inventory.product",
+  "pk": 20,
+  "fields": {
+    "name": "Power Factor Correction Unit",
+    "description": "Improves power efficiency in industrial settings",
+    "category": 5,
+    "price": "299.99",
+    "tags": [
+      1,
+      10
+    ]
+  }
+}
+]
