@@ -14,7 +14,7 @@ def product_list(request):
     """
     
     # fetch all products, tags, and categories from the database to populate the dropdowns
-    products = Product.objects.all()
+    products = Product.objects.prefetch_related('tags').select_related('category')
     categories = Category.objects.all()
     tags = Tag.objects.all()
 
