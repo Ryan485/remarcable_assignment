@@ -31,11 +31,13 @@ def product_list(request):
     if tag:
         products = products.filter(tags__id__in = tag)
 
-    return render(request, 'inventory/index.html', {
+    context = {
         'products' : products,
         'categories' : categories,
         'tags' : tags,
         'selected_category' : category,
         'selected_tags' : [int(t) for t in tag],
         'search_query' : search or ''
-        })
+        }
+
+    return render(request, 'inventory/index.html', context)
